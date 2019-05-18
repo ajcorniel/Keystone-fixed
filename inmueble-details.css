@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400,500,600|Catamaran:300,500,600,700,800,900");
+
+@font-face {
+  font-family: "haymakerregular";
+  src: url("../../fonts/haymaker-webfont.eot");
+  src: url("../../fonts/haymaker-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/haymaker-webfont.woff") format("woff"),
+    url("../../fonts/haymaker-webfont.ttf") format("truetype"),
+    url("../../fonts/haymaker-webfont.svg#haymakerregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "blanchcaps_inline";
+  src: url("../../fonts/blanch_caps_inline-webfont.eot");
+  src: url("../../fonts/blanch_caps_inline-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/blanch_caps_inline-webfont.woff") format("woff"),
+    url("../../fonts/blanch_caps_inline-webfont.ttf") format("truetype"),
+    url("../../fonts/blanch_caps_inline-webfont.svg#blanchcaps_inline")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+
+  --blue: #20a8d8;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #f94f4f;
+  --yellow: #f8cb00;
+  --orange: #ffc107;
+  --green: #4dbd74;
+  --teal: #20c997;
+  --cyan: #63c2de;
+  --custom-background: #f1f0eb;
+
+  --white: #fff;
+  --gray-100: #f0f3f5;
+  --gray-200: #c2cfd6;
+  --gray-300: #a4b7c1;
+  --gray-400: #869fac;
+  --gray-500: #678898;
+  --gray-600: #536c79;
+  --gray-700: #3e515b;
+  --gray-800: #29363d;
+  --gray-900: #151b1e;
+  --black: #000;
+  --gold: #b5923e;
+
+  --primary: #6f42c1;
+  --secondary: #9a9b98e0;
+  --info: #00b0ff;
+  --success: #3ebb3c;
+  --warning: #fbd82b;
+  --danger: #dc2649;
+
+
+  --custom: #0b109f;
+  --default: #fff;
+  --inverse: #292b2c;
+  --fadded: #edecec;
+  --muted: #999;
+  --inherit: inherit;
+  
+  /* Utilities */
+
+  --percent-25: 25%;
+  --percent-50: 50%;
+  --percent-75: 75%;
+  --percent-100: 100%;
+
+  --rem-0: 0;
+  --rem-025: 0.25rem;
+  --rem-050: 0.5rem;
+  --rem-075: 0.75rem;
+  --rem-1: 1rem;
+  --rem-125: 1.25rem;
+  --rem-150: 1.5rem;
+  --rem-175: 1.75rem;
+  --rem-2: 2rem;
+  --rem-225: 2.25rem;
+  --rem-250: 2.5rem;
+  --rem-275: 2.75rem;
+  --rem-3: 3rem;
+
+  --padding-sm: 0.625rem;
+  --padding-md: var(--padding-sm) * 2;
+  --padding-lg: var(--padding-sm) * 3;
+
+  --margin-sm: 0.5rem;
+  --margin-md: var(--margin-sm) * 2;
+  --margin-lg: var(--margin-sm) * 3;
+
+  --height-sm: 6.25rem;
+  --height-md: var(--height-sm) * 2;
+  --height-lg: var(--height-sm) * 3;
+  --height-max: 100%;
+
+  --width-sm: 6.25rem;
+  --width-md: var(--width-sm) * 2;
+  --width-lg: var(--width-sm) * 3;
+  --width-max: 100%;
+
+  /* Typography */
+
+  --primary-font: "Catamaran";
+  --secondary-font: "Hind";
+  --alternative-font: "Serif";
+  --custom-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --blanch-font: "blanchcaps_inline", sans-serif;
+  --haymaker-font: "haymakerregular", sans-serif;
+  --lucida-console-font: "Lucida Console";
+
+  --font-size-base: 0.875rem;
+  --font-weight-base: 500;
+  --line-height-base: 1.5;
+
+  --xs-font-size: var(--rem-050);
+  --sm-font-size: var(--rem-075);
+  --md-font-size: var(--rem-1);
+  --lg-font-size: var(--rem-2);
+  --xl-font-size: var(--rem-3);
+  --xl2-font-size: 4rem;
+  --xl3-font-size: 5rem;
+  --xl4-font-size: 6rem;
+  --xl5-font-size: 7rem;
+
+  --h1-font-size: var(--rem-250);
+  --h2-font-size: var(--rem-175);
+  --h3-font-size: var(--rem-150);
+  --h4-font-size: var(--rem-125);
+  --h5-font-size: var(--rem-1);
+  --h6-font-size: var(--rem-075);
+  
+  /* Grid */
+
+  --short-padding: 4.375rem;
+  --long-padding: 73.75rem;
+  --sm-size: 3.125rem;
+  --md-size: 7.813rem;
+
+  --offset-1: var(--col-1);
+  --offset-2: var(--col-1) * 2;
+  --offset-3: var(--col-1) * 3;
+  --offset-4: var(--col-1) * 4;
+  --offset-5: var(--col-1) * 5;
+  --offset-6: var(--col-1) * 6;
+  --offset-7: var(--col-1) * 7;
+  --offset-8: var(--col-1) * 8;
+  --offset-9: var(--col-1) * 9;
+  --offset-10: var(--col-1) * 10;
+  --offset-11: var(--col-1) * 11;
+  --offset-12: var(--col-1) * 12;
+
+  --col-1: var(--flex-1);
+  --col-2: var(--flex-1) * 2;
+  --col-3: var(--flex-1) * 3;
+  --col-4: var(--flex-1) * 4;
+  --col-5: var(--flex-1) * 5;
+  --col-6: var(--flex-1) * 6;
+  --col-7: var(--flex-1) * 7;
+  --col-8: var(--flex-1) * 8;
+  --col-9: var(--flex-1) * 9;
+  --col-10: var(--flex-1) * 10;
+  --col-11: var(--flex-1) * 11;
+  --col-12: var(--flex-1) * 12;
+
+  --flex-1: 8.2%;
+  --flex-2: var(--flex-1) * 2;
+  --flex-3: var(--flex-1) * 3;
+  --flex-4: var(--flex-1) * 4;
+  --flex-5: var(--flex-1) * 5;
+  --flex-6: var(--flex-1) * 6;
+  --flex-7: var(--flex-1) * 7;
+  --flex-8: var(--flex-1) * 8;
+  --flex-9: var(--flex-1) * 9;
+  --flex-10: var(--flex-1) * 10;
+  --flex-11: var(--flex-1) * 11;
+  --flex-12: var(--flex-1) * 12;
+  
+  --padding-right-base: 10px;
+  --padding-left-base: 10px;
+
+  /* Media Queries */
+
+  --container-sm-maxwidth: 33.75rem;
+  --container-md-maxwidth: 45rem;
+  --container-lg-maxwidth: 60rem;
+  --container-xl-maxwidth: 87.5rem;
+  --container-paddingX: 0.9375rem;
+
+  --xs-media: 25rem;
+  --xs-min-width: 576px;
+
+  --sm-media: 37rem;
+  --sm-min-width: 768px;
+  
+  --md-media: 48rem;
+  --md-min-width: 992px;
+  
+  --lg-media: 62rem;
+  --lg-min-width: 1200px;
+  
+  --xl-media: 75rem;
+  --xl-min-width: 1200px;
+
+  
+  --icon-font-size-xl: var(--rem-3);
+  --icon-font-size-lg: var(--rem-250);
+  --icon-font-size-md: var(--rem-175);
+  --icon-font-size-sm: var(--rem-125);
+}
+
+/* Need bootstrap 4.3.1 and ajax
+
+Needs:
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+  }
+
+.gallery-section{
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+  }
+  
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+  }
+  
+  .gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  
+  .gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  
+  .gallery-section .image img{
+    width: 100%;
+    height: 45%;
+    padding-left: var(--padding-left-base);
+    padding-right: var(--padding-right-base);
+    padding-top: var(--padding-left-base);
+    padding-bottom: var(--padding-right-base);
+    transition: 0.4s;
+  }
+  
+  .gallery-section .image:hover img{
+    transform: scale(1.4) ;
+  }
+  
+  .Idescription {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: 700;
+  }
+  
+  .Iprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    border: 0px 0px 0px 0px !important
+  
+  }
+  
+  .IPimage {
+    width: 200px;
+    height: 170px;
+    border-radius: 25px;
+    margin-right: 1%
+  
+  }
+  @media screen and (max-width:960px) {
+    .gallery-section .image{
+      flex: 33.33%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .gallery-section .image{
+      flex: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .gallery-section .image{
+      flex: 100%;
+    }
+  }
+  
+  .mfp-bg{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1042;
+    overflow:hidden;
+    position:fixed;
+    background:#0b0b0b;
+    opacity:.8}
+  
+  .mfp-wrap{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1043;
+    position:fixed;
+    outline:none !important;
+    -webkit-backface-visibility: hidden}
+    
+  .mfp-container{
+    text-align:center;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    padding:0 8px;
+    box-sizing:border-box}
+  
+  .mfp-container:before{
+    content:'';
+    display:inline-block;
+    height:100%;
+    vertical-align:middle}
+      
+  .mfp-align-top .mfp-container:before{
+    display:none}
+  
+  .mfp-content{
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    margin:0 auto;
+    text-align:left;
+    z-index:1045}
+  
+  .mfp-inline-holder .mfp-content,.mfp-ajax-holder .mfp-content{
+    width:100%;
+    cursor:auto}
+  
+  .mfp-ajax-cur{
+    cursor:progress}
+  
+  .mfp-zoom-out-cur,.mfp-zoom-out-cur .mfp-image-holder .mfp-close{
+    cursor:-moz-zoom-out;
+    cursor:-webkit-zoom-out;
+    cursor:zoom-out}
+    
+  .mfp-zoom{
+    cursor:pointer;
+    cursor:-webkit-zoom-in;
+    cursor:-moz-zoom-in;
+    cursor:zoom-in}
+  
+    .mfp-auto-cursor .mfp-content{
+      cursor:auto}
+  
+  .mfp-close,.mfp-arrow,.mfp-preloader,.mfp-counter{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none}
+    
+  .mfp-loading.mfp-figure{
+    display:none}
+    
+  .mfp-hide{
+    display:none !important}
+  
+  .mfp-preloader{
+    color:#CCC;
+    position:absolute;
+    top:50%;
+    width:auto;
+    text-align:center;
+    margin-top:-0.8em;
+    left:8px;
+    right:8px;
+    z-index:1044}
+      
+  .mfp-preloader a{
+    color:#CCC}
+  .mfp-preloader a:hover{
+    color:#FFF}
+  
+  .mfp-s-ready .mfp-preloader{
+    display:none}
+  
+  .mfp-s-error .mfp-content{
+    display:none}
+  
+  button.mfp-close,button.mfp-arrow{
+    overflow:visible;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    -webkit-appearance:none;
+    display:block;
+    outline:0;
+    padding:0;
+    z-index:1046;
+    box-shadow:none;
+    touch-action:manipulation}
+    
+  button::-moz-focus-inner{
+    padding:0;border:0}
+  
+  .mfp-close{
+    width:44px;
+    height:44px;
+    line-height:44px;
+    position:absolute;
+    right:0;
+    top:0;
+    text-decoration:none;
+    text-align:center;
+    opacity:.65;
+    padding:0 0 18px 10px;
+    color:#FFF;
+    font-style:normal;
+    font-size:28px;
+    font-family:Arial,Baskerville,monospace}
+    
+  .mfp-close:hover,.mfp-close:focus{
+    opacity:1}
+    
+  .mfp-close:active{
+    top:1px}
+    
+  .mfp-close-btn-in .mfp-close{
+    color:#333}
+    
+  .mfp-image-holder .mfp-close,.mfp-iframe-holder .mfp-close{
+    color:#FFF;
+    right:-6px;
+    text-align:right;
+    padding-right:6px;
+    width:100%}
+    
+  .mfp-counter{
+    position:absolute;
+    top:0;
+    right:0;
+    color:#CCC;
+    font-size:12px;
+    line-height:18px;
+    white-space:nowrap}
+    
+  .mfp-arrow{
+    position:absolute;
+    opacity:.65;
+    margin:0;
+    top:50%;
+    margin-top:-55px;
+    padding:0;
+    width:90px;
+    height:110px;
+    -webkit-tap-highlight-color:transparent}
+    
+  .mfp-arrow:active{
+    margin-top:-54px}
+    
+  .mfp-arrow:hover,.mfp-arrow:focus{
+    opacity:1}
+  
+  .mfp-arrow:before,.mfp-arrow:after{
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    left:0;
+    top:0;
+    margin-top:35px;
+    margin-left:35px;
+    border:medium inset transparent}
+      
+  .mfp-arrow:after{
+    border-top-width:13px;
+    border-bottom-width:13px;
+    top:8px}
+    
+  .mfp-arrow:before{
+    border-top-width:21px;
+    border-bottom-width:21px;
+    opacity:.7}
+    
+  .mfp-arrow-left{
+    left:0}
+    
+  .mfp-arrow-left:after{
+    border-right:17px solid #FFF;
+    margin-left:31px}
+    
+  .mfp-arrow-left:before{
+    margin-left:25px;
+    border-right:27px solid #3f3f3f}
+    
+  .mfp-arrow-right{
+    right:0}
+  
+  .mfp-arrow-right:after{
+    border-left:17px solid #FFF;
+    margin-left:39px}
+  
+  .mfp-arrow-right:before{
+    border-left:27px solid #3f3f3f}
+  
+  .mfp-iframe-holder{
+    padding-top:40px;
+    padding-bottom:40px}
+  
+  .mfp-iframe-holder .mfp-content{
+    line-height:0;
+    width:100%;
+    max-width:900px}
+  
+  .mfp-iframe-holder .mfp-close{
+    top:-40px}
+  
+  .mfp-iframe-scaler{
+    width:100%;
+    height:0;
+    overflow:hidden;
+    padding-top:56.25%}
+  
+  .mfp-iframe-scaler iframe{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    box-shadow:0 0 8px rgba(0,0,0,0.6);
+    background:#000}
+    
+  img.mfp-img{
+    width:auto;
+    max-width: 100%;
+    height:auto;
+    display:block;
+    line-height:0;
+    padding:1%;
+    margin:0 auto;
+    max-height: 600px !important}
+      
+  .mfp-figure{
+    line-height:0}
+    
+  .mfp-figure:after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:40px;
+    bottom:40px;
+    display:block;
+    right:0;
+    width:auto;
+    height:auto;
+    z-index:-1;
+    box-shadow:0 0 8px rgba(0,0,0,0.6);
+    background:#444}
+    
+  .mfp-figure small{
+    color:#bdbdbd;
+    display:block;
+    font-size:12px;
+    line-height:14px}
+    
+  .mfp-figure figure{
+    margin:0}
+    
+  .mfp-bottom-bar{
+    margin-top:-36px;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    cursor:auto}
+    
+  .mfp-title{
+    text-align:left;
+    line-height:18px;
+    color:#f3f3f3;
+    word-wrap:break-word;
+    padding-right:36px}
+    
+  .mfp-image-holder .mfp-content{
+    max-width:100%}
+    
+  .mfp-gallery .mfp-image-holder .mfp-figure{
+    cursor:pointer}
+    
+  @media screen and (max-width:800px) and (orientation:landscape),screen and (max-height:300px){
+    .mfp-img-mobile .mfp-image-holder{
+      padding-left:0;padding-right:0}
+      
+    .mfp-img-mobile img.mfp-img{
+      padding:0}
+  
+    .mfp-img-mobile .mfp-figure:after{
+      top:0;bottom:0}
+  
+    .mfp-img-mobile .mfp-figure small{
+      display:inline;
+      margin-left:5px}
+      
+    .mfp-img-mobile .mfp-bottom-bar{
+      background:rgba(0,0,0,0.6);
+      bottom:0;
+      margin:0;
+      top:auto;
+      padding:3px 5px;
+      position:fixed;
+      box-sizing:border-box}
+      
+    .mfp-img-mobile .mfp-bottom-bar:empty{
+      padding:0}
+  
+    .mfp-img-mobile .mfp-counter{
+      right:5px;top:3px}
+      
+    .mfp-img-mobile .mfp-close{
+      top:0;
+      right:0;
+      width:35px;
+      height:35px;
+      line-height:35px;
+      background:rgba(0,0,0,0.6);
+      position:fixed;
+      text-align:center;
+      padding:0}
+    }
+  
+  @media all and (max-width:900px){
+    .mfp-arrow{
+      -webkit-transform:scale(0.75);
+      transform:scale(0.75)}
+      
+    .mfp-arrow-left{
+      -webkit-transform-origin:0 0;
+      transform-origin:0 0}
+      
+    .mfp-arrow-right{
+    -webkit-transform-origin:100%;
+    transform-origin:100%}
+    
+    .mfp-container{
+      padding-left:6px;
+      padding-right:6px}
+    }
+
+/* 
+Inmueble details structure:
+
+      <div class="gallery-section">
+            <div class="inner-width">
+              <h1>Apartamento en venta milagro norte</h1>
+              <div class="border"></div>
+              <div class="gallery">
+      
+                <a href="images/4_post.png" class="image">
+                  <img src="images/4_post.png" alt="">
+                </a>
+      
+                <a href="images/2_post.png" class="image">
+                  <img src="images/2_post.png" alt="">
+                </a>
+      
+                <a href="images/6_post.png" class="image">
+                  <img src="images/6_post.png" alt="">
+                </a>
+      
+                <a href="images/4_post.png" class="image">
+                  <img src="images/4_post.png" alt="">
+                </a>
+      
+                <a href="images/4_post.png" class="image">
+                  <img src="images/4_post.png" alt="">
+                </a>
+      
+                <a href="images/4_post.png" class="image">
+                  <img src="images/4_post.png" alt="">
+                </a>
+      
+                <a href="images/4_post.png" class="image">
+                  <img src="images/4_post.png" alt="">
+                </a>
+      
+                <a href="images/4_post.png" class="image">
+                  <img src="images/4_post.png" alt="">
+                </a>
+      
+              </div>
+            </div>
+          </div>
+    
+            
+            <div class="Idetails">
+            <h2>
+              Precio:
+            </h2>
+            <h2>
+              26.500.800 Bs
+              </h2>
+            </div>
+            <div class="Idetails">
+              <h2>
+                Habitaciones:
+              </h2>
+              <h2>
+                4
+              </h2>
+            </div>
+            <div class="Idetails">
+              <h2>
+                Baños
+              </h2>
+              <h2>
+                3
+              </h2>
+            </div>
+            <div class="Idetails">
+              <h2>
+                Metros cuadrados
+              </h2>
+              <h2>
+                150
+              </h2>
+            </div>
+            <div class="Idetails">
+              <h2>
+                Operacion:
+              </h2>
+              <h2>
+                venta
+              </h2>
+            </div>
+            <div class="Idetails">
+              <h2>
+                Tipo:
+              </h2>
+              <h2>
+                Apartamento
+              </h2>
+            </div>
+            <div class="Idetails">
+              <div class="Iprofile">
+                <h2>
+                  Contacto:
+                </h2>
+                <br>
+                <img src="images/profile.jpg" class="IPimage">
+                  <h3>
+                    Luis Machado
+                  </h3>
+                  <h3>
+                    0261 7933842
+                  </h3>
+                  <h3>
+                    luiseduardove@keystone.com
+                  </h3>
+              </div>
+            </div>
+              <p class="Idescription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique illum error labore? Vitae dolores quis vero! 
+                Voluptas fugit sed consectetur perferendis quas adipisci reiciendis libero, 
+                doloremque placeat perspiciatis totam accusantium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum, incidunt aliquam suscipit consequatur reiciendis odit consectetur cum, velit vitae autem magni beatae minima. Asperiores dolore porro hic nam ipsum!
+              </p>
+              <br>
+*/
