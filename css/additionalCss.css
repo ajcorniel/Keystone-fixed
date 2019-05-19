@@ -847,12 +847,6 @@ a .socialM:hover {
   margin-right: 30px;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-  box-sizing: border-box;
-}
 
 .gallery-section{
   width: 100%;

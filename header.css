@@ -359,7 +359,19 @@ nav {
     position: absolute
   }
 
-  .socialM a:hover {
+  .socialM a {
+    position: absolute;
+  }
+
+  a {
+    z-index: 1
+  }
+
+  .socialM a {
+    position: absolute
+  }
+
+  a .socialM:hover {
     opacity: 0.5
   }
 
